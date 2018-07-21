@@ -1,8 +1,8 @@
 {
   "name": "BCAlertView",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "A short description of BCAlertView.",
-  "description": "热更新弹窗,更新带进度条渐变色",
+  "description": "热更新弹窗,更新和取消按钮，更新带进度条渐变色,更新完成后显示好的按钮",
   "homepage": "https://github.com/yanyi0",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yanyi0/BCAlertView.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "8.0"

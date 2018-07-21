@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   #名称
   s.name             = 'BCAlertView'
   #版本号
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   #简介
   s.summary          = 'A short description of BCAlertView.'
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   #描述     
-  s.description      = '热更新弹窗,更新带进度条渐变色'
+  s.description      = '热更新弹窗,更新和取消按钮，更新带进度条渐变色,更新完成后显示好的按钮'
 
   #主页,这里要填写可以访问到的地址，不然验证不通过
   s.homepage         = 'https://github.com/yanyi0'
