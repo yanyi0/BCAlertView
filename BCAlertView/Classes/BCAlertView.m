@@ -7,6 +7,12 @@
 
 #import "BCAlertView.h"
 #import "Masonry.h"
+// 屏幕宽度
+#define kScreenWidth ((CGRectGetWidth([UIScreen mainScreen].bounds) > CGRectGetHeight([UIScreen mainScreen].bounds))?(CGRectGetHeight([UIScreen mainScreen].bounds)):(CGRectGetWidth([UIScreen mainScreen].bounds)))
+
+// 屏幕高度
+#define kScreenHeight ((CGRectGetWidth([UIScreen mainScreen].bounds) > CGRectGetHeight([UIScreen mainScreen].bounds))?(CGRectGetWidth([UIScreen mainScreen].bounds)):(CGRectGetHeight([UIScreen mainScreen].bounds)))
+
 #define kHexColor(value) [UIColor colorWithRed:((float)(((value) & 0xFF0000) >> 16))/255.0 green:((float)(((value) & 0xFF00) >> 8))/255.0 blue:((float)((value) & 0xFF))/255.0 alpha:1.0]
 /*
  *  以iPhone6宽、高为标准的元单位
@@ -79,7 +85,7 @@
         [self.confirmBtn.layer addSublayer:gradientLayer0];
         [self.confirmBtn setTitle:@"更新" forState:UIControlStateNormal];
         [self.confirmBtn setTitleColor:kHexColor(0xFFFFFF) forState:UIControlStateNormal];
-        self.confirmBtn.layer.cornerRadius = self.confirmBtn.height * 0.5;
+        self.confirmBtn.layer.cornerRadius = self.confirmBtn.frame.size.height * 0.5;
         self.confirmBtn.layer.masksToBounds = YES;
         [self.confirmBtn.titleLabel setFont:[UIFont fontWithName:@"PingFangSC-Regular" size:17]];
         [self.confirmBtn addTarget:self action:@selector(confirmClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -99,7 +105,7 @@
         [self.statusBtn setTitle:@"好的" forState:UIControlStateNormal];
         [self.statusBtn setTitleColor:kHexColor(0xFFFFFF) forState:UIControlStateNormal];
         [self.statusBtn.titleLabel setFont:[UIFont fontWithName:@"PingFangSC-Regular" size:17]];
-        self.statusBtn.layer.cornerRadius = self.statusBtn.height * 0.5;
+        self.statusBtn.layer.cornerRadius = self.statusBtn.frame.size.height * 0.5;
         self.statusBtn.layer.masksToBounds = YES;
         [self.backImageView addSubview:self.statusBtn];
         self.statusBtn.tag = 1002;

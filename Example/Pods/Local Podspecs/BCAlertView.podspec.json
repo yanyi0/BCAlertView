@@ -1,22 +1,28 @@
 {
   "name": "BCAlertView",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "summary": "A short description of BCAlertView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/785144130@qq.com/BCAlertView",
+  "description": "热更新弹窗,更新带进度条渐变色",
+  "homepage": "https://github.com/yanyi0",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "785144130@qq.com": "785144130@qq.com"
+    "cloud": "785144130@qq.com"
   },
   "source": {
-    "git": "https://github.com/785144130@qq.com/BCAlertView.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/yanyi0/BCAlertView.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "BCAlertView/Classes/**/*"
+  "source_files": "BCAlertView/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Masonry": [
+      "~> 1.0.2"
+    ]
+  }
 }
