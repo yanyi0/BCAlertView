@@ -1,7 +1,7 @@
 use_frameworks!
 #pod 'BCAlertView', :path => '../' # 指定路径
 target 'BCAlertView_Example' do
-  pod 'BCAlertView', :podspec => '../BCAlertView.podspec'
+  pod 'BCAlertView', :path => '../'
 
   target 'BCAlertView_Tests' do
     inherit! :search_paths
