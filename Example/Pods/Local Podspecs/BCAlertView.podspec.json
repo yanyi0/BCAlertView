@@ -1,0 +1,22 @@
+{
+  "name": "BCAlertView",
+  "version": "0.1.0",
+  "summary": "A short description of BCAlertView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/785144130@qq.com/BCAlertView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "785144130@qq.com": "785144130@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/785144130@qq.com/BCAlertView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BCAlertView/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module BCAlertView {
+  umbrella header "BCAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}
