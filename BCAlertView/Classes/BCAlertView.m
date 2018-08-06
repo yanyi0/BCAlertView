@@ -142,8 +142,8 @@
         
         self.progressView.hidden = NO;
         self.statusBtn.hidden = YES;
-        self.cancelBtn.hidden = YES;
-        self.confirmBtn.hidden = YES;
+        self.cancelBtn.hidden = NO;
+        self.confirmBtn.hidden = NO;
     }
     return self;
 }
